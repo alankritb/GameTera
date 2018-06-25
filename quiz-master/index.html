@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Quiz Time</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+
+	<body>
+
+		<h1>Quiz Time</h1>
+
+		<div id='info'>
+
+			<div id="score">
+				<h3><u>Current Score</u></h3>
+					<div id="displayScore">
+						<h4>Correct Answers:</h4>
+						<div id="correct"></div>
+						<h4>Wrong Answers:</h4>
+						<div id="missed"></div>
+					</div>
+			</div>
+
+			<div id='previousScore'>
+				<h3>Previous Score:</h3>
+				<div id="previous"></div>
+			</div>
+
+			<div id="directions">
+				<div id="directionList" class="hide">
+					<h3>Directions:</h3>
+					<ul>
+						<li>Choose Difficulty</li>
+						<li>Click 'Start Game' button</li>
+						<li>Guess the correct answer</li>
+						<li>Click 'Next' to move to next question</li>
+						<li>When done, click 'Start Over' button to play again!</li>
+					</ul>
+				</div>
+
+				<button id="toggleDirections">Show Directions</button>
+			</div>
+
+		</div>
+
+		<div id='difficulty'>
+			<h4>Difficulty:</h4>
+				<form id="diffForm" name="diffForm">
+					<input class="diff" name="diff" type="radio" id="diff1" value=1>Easy</input>
+					<input class="diff" name="diff" type="radio" id="diff2" value=2>Medium</input>
+					<input class="diff" name="diff" type="radio" id="diff3" value=3>Hard</input>
+				</form>
+			</div>
+
+		<div id="container">
+			<div id="question"></div>
+
+			<form name="guessForm" id="guessForm">
+
+				<div class="answerStyle">
+					<input class="answer" type="radio" name="answer" id="0" value=0>
+					<label class="guessLabel" for="0"></label>
+				</div>
+
+				<div class="answerStyle">
+					<input class="answer" type="radio" name="answer" id="1" value=1>
+					<label class="guessLabel" for="1"></label>
+				</div>
+
+				<div class="answerStyle">
+					<input class="answer" type="radio" name="answer" id="2" value=2>
+					<label class="guessLabel" for="2"></label>
+				</div>
+
+				<div class="answerStyle"	>
+					<input class="answer" type="radio" name="answer" id="3" value=3>
+					<label class="guessLabel" for="3"></label>
+				</div>
+
+			</form>
+
+			<div id="caution">*Please choose an answer before continuing</div>
+
+			<div class="progress">
+				<button id="submit">Next Question</button>
+			</div>
+		</div>
+
+		<div class="begin">
+			<button id="start">Start Game</button>
+			<button id="reset">Start Over</button>
+		</div>
+
+		<script src="quiz.js"></script>
+	</body>
+
+</html>
