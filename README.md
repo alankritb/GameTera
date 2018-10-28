@@ -1,2 +1,2 @@
 # GameTera
-GameTera is a gaming site which is created by me. It is a collage project. Feel free to use it and make sure to play, give review on this website
+GameTera is a gaming website where you can play and enjoy different games when you get bored with your usual work. You don't need to install any setup, just start playing. Feel free to use it and provide us with feedback on this website  http://gametera.000webhostapp.com/
